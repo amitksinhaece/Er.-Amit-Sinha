@@ -1,0 +1,261 @@
+!DOCTYPE html
+html lang=en
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleProfile Link - Er. Amit K Sinhatitle
+    link href=httpsfonts.googleapis.comcss2family=Mulishwght@600&display=swap rel=stylesheet
+    style
+        body {
+            font-family 'Mulish', sans-serif;
+            font-weight 600;
+            background linear-gradient(135deg, #3b4a3f, #2e3a2f, #4a5a4b);
+            display flex;
+            justify-content center;
+            align-items center;
+            height 100vh;
+            margin 0;
+        }
+        .container {
+            position relative;
+            background linear-gradient(135deg, #D4AF37, #C19A36);
+            border-radius 8px;
+            box-shadow 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+            width 320px;
+            padding 20px;
+            text-align center;
+            overflow hidden;
+        }
+        .containerbefore, .containerafter, .droplet-1, .droplet-2, .droplet-3, .droplet-4, .droplet-5 {
+            content '';
+            position absolute;
+            background rgba(255, 255, 255, 0.15);
+            border-radius 50%;
+            box-shadow inset 1px 1px 2px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.2);
+            border 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .containerbefore {
+            width 8px;
+            height 8px;
+            top 10%;
+            left 15%;
+        }
+        .containerbeforeafter {
+            content '';
+            position absolute;
+            width 2px;
+            height 2px;
+            background rgba(255, 255, 255, 0.9);
+            top 1px;
+            left 1px;
+            border-radius 50%;
+        }
+        .containerafter {
+            width 6px;
+            height 6px;
+            top 25%;
+            left 30%;
+        }
+        .containerafterafter {
+            content '';
+            position absolute;
+            width 1.5px;
+            height 1.5px;
+            background rgba(255, 255, 255, 0.9);
+            top 1px;
+            left 1px;
+            border-radius 50%;
+        }
+        .droplet-1 {
+            width 5px;
+            height 5px;
+            top 40%;
+            left 50%;
+        }
+        .droplet-1after {
+            content '';
+            position absolute;
+            width 1px;
+            height 1px;
+            background rgba(255, 255, 255, 0.9);
+            top 1px;
+            left 1px;
+            border-radius 50%;
+        }
+        .droplet-2 {
+            width 7px;
+            height 7px;
+            top 60%;
+            left 70%;
+        }
+        .droplet-2after {
+            content '';
+            position absolute;
+            width 2px;
+            height 2px;
+            background rgba(255, 255, 255, 0.9);
+            top 1px;
+            left 1px;
+            border-radius 50%;
+        }
+        .droplet-3 {
+            width 4px;
+            height 4px;
+            top 15%;
+            left 85%;
+        }
+        .droplet-3after {
+            content '';
+            position absolute;
+            width 1px;
+            height 1px;
+            background rgba(255, 255, 255, 0.9);
+            top 0.5px;
+            left 0.5px;
+            border-radius 50%;
+        }
+        .droplet-4 {
+            width 6px;
+            height 6px;
+            top 80%;
+            left 20%;
+        }
+        .droplet-4after {
+            content '';
+            position absolute;
+            width 1.5px;
+            height 1.5px;
+            background rgba(255, 255, 255, 0.9);
+            top 1px;
+            left 1px;
+            border-radius 50%;
+        }
+        .droplet-5 {
+            width 5px;
+            height 5px;
+            top 50%;
+            left 90%;
+        }
+        .droplet-5after {
+            content '';
+            position absolute;
+            width 1px;
+            height 1px;
+            background rgba(255, 255, 255, 0.9);
+            top 1px;
+            left 1px;
+            border-radius 50%;
+        }
+        .container h1 {
+            font-size 22px;
+            margin 5px 0 15px 0;
+            color #1C2526;
+            text-align left;
+            position relative;
+            z-index 1;
+        }
+        .columns {
+            display flex;
+            justify-content space-between;
+            gap 10px;
+            position relative;
+            z-index 1;
+        }
+        .left-column, .right-column {
+            display flex;
+            flex-direction column;
+            gap 10px;
+            width 48%;
+        }
+        .tab {
+            display flex;
+            align-items center;
+            justify-content center;
+            padding 10px 15px;
+            color #fff;
+            text-decoration none;
+            border-radius 5px;
+            font-size 14px;
+            box-shadow 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+            background linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+            transition transform 0.1s, box-shadow 0.1s;
+        }
+        .tabhover {
+            transform translateY(-2px);
+            box-shadow 0 6px 12px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+        }
+        .tab.call-tab {
+            background-color #FF9933;
+        }
+        .tab.call-tabhover {
+            background-color #E68A2E;
+        }
+        .tab.whatsapp-tab {
+            background-color #28a745;
+        }
+        .tab.whatsapp-tabhover {
+            background-color #1e7e34;
+        }
+        .tab.email-tab {
+            background-color #007bff;
+        }
+        .tab.email-tabhover {
+            background-color #0056b3;
+        }
+        .tab.visiting-card-tab {
+            background-color #ff0000;
+        }
+        .tab.visiting-card-tabhover {
+            background-color #cc0000;
+        }
+        .tab.portfolio-tab {
+            background-color #000066;
+            color #fff;
+        }
+        .tab.portfolio-tabhover {
+            background-color #00004d;
+        }
+        .tab.website-tab {
+            background-color #800080;
+            color #fff;
+        }
+        .tab.website-tabhover {
+            background-color #660066;
+        }
+    style
+head
+body
+    div class=container
+        h1Er. Amit K Sinhah1
+        div class=columns
+            div class=left-column
+                a href=httpsdrive.google.comucexport=view&id=18CmpNpwaIsoqMI2y5NiMoZohMp_EW0tt class=tab visiting-card-tab
+                    Visiting Card
+                a
+                a href=httpsdrive.google.comucexport=view&id=1yD2QESRVccSDe7LIU83jmtERE-PrZdPW class=tab portfolio-tab
+                    Our Work
+                a
+                a href=httpswww.icicifoundation.org class=tab website-tab
+                    Company Website
+                a
+            div
+            div class=right-column
+                a href=httpswa.me+917091330207text=Hello%20Amit%20K%20Sinha,%20I%20am%20contacting%20you%20regarding... class=tab whatsapp-tab
+                    WhatsApp
+                a
+                a href=tel+917091330207 class=tab call-tab
+                    Call
+                a
+                a href=mailtoamit.sinha@icicifoundation.org class=tab email-tab
+                    Email
+                a
+            div
+        div
+        div class=droplet-1div
+        div class=droplet-2div
+        div class=droplet-3div
+        div class=droplet-4div
+        div class=droplet-5div
+    div
+body
+html
